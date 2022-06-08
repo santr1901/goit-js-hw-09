@@ -25,4 +25,4 @@ const stop = () => {
 }
 
 startBtn.addEventListener("click", start);
-stopBtn.addEventListener("click", stop)
+stopBtn.addEventListener("click", stop);
