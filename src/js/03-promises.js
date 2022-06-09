@@ -14,8 +14,6 @@ function submit(event) {
     for (let i = 1; i <= inputAmount.value; i++) {
       const position = i;
       let step = Number(inputDelay.value) + Number(inputStep.value) * position;
-      console.log(step);
-
       createPromise(position, step)
         .then(({ position, delay }) => {
           Notiflix.Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
